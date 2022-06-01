@@ -1,4 +1,4 @@
-# landing-page
+# Medusa Homepage Design
 
 Medusa Homepage design with Next.js and CSS grid
 
