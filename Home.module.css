@@ -1,0 +1,309 @@
+.container {
+  min-height: 100vh;
+  padding-left: 120px;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  background-image: linear-gradient(black, #686868,black);
+}
+
+
+.main {
+  padding: 6rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: clamp(2rem, 8vw, 4rem);
+  color:white;
+  font-family: Sans-serif;
+
+}
+
+
+.description {
+  line-height: 1.5;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  color:#c2c3c6;
+}
+
+.tag {
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-family: Sans-serif;
+  margin-right: 4rem;
+  text-decoration: none !important;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 9rem;
+  font-family: Sans-serif;
+  color:white;
+  font-size: clamp(1rem, 2vw, 1.3rem);
+
+}
+
+.card {
+  margin-right: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: var(--logo-color-900);
+  border-color: var(--logo-color-900);
+}
+
+.card h2 {
+  margin: 0 0 .5rem 0;
+  font-size: 1.25rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+
+
+.hero {
+  text-align: left;
+  max-width: 800px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  font-family: Sans-serif;
+  text-decoration: none;
+}
+
+.btn {
+  font-size: 1.125rem;
+  min-height: 3rem;
+  min-width: 3rem;
+  padding: 0.5rem 1.25rem;
+  align-self: center;
+  display: inline-flex;
+  align-items: center;
+  background: var(--logo-color-900);
+  color: white;
+  border-radius: 8px;
+  transition: background .2s ease-in;
+  font-weight: 500;
+  border: none;
+  text-decoration: none;
+  transition: all .5s ease-in-out;
+ animation: gradient 10s infinite cubic-bezier(.62, .28, .23, .99) both;
+}
+
+.btn1{
+  font-size: 1.125rem;
+  min-height: 3rem;
+  min-width: 3rem;
+  padding: 0.5rem 1.25rem;
+  align-self: center;
+  display: inline-flex;
+  align-items: center;
+
+  border-radius: 8px;
+  font-weight: 500;
+  border: none;
+  text-decoration: none;
+background: linear-gradient(-45deg,#d181ff,#3f00b5) !important;
+ background-size: 800% 400%;
+ color: white;
+ transition: all .5s ease-in-out;
+ animation: gradient 10s infinite cubic-bezier(.62, .28, .23, .99) both;
+
+}
+
+
+.btn1:hover {
+  animation: gradient 3s infinite;
+  transform: scale(1.05);
+  
+ }
+ 
+ .btn1:active {
+  animation: gradient 3s infinite;
+  transform: scale(0.8);
+ }
+ 
+ @keyframes gradient {
+  0% {
+   background-position: 0% 50%;
+  }
+ 
+  50% {
+   background-position: 100% 50%;
+  }
+ 
+  100% {
+   background-position: 0% 50%;
+  }
+ }
+
+ .btn:hover {
+  animation: gradient 3s infinite;
+  transform: scale(1.05);
+  
+ }
+ 
+ .btn:active {
+  animation: gradient 3s infinite;
+  transform: scale(0.8);
+ }
+ 
+
+.btn1 svg {
+  margin-left: 0.5rem;
+  font-size: var(--fz-l);
+}
+
+.btn svg {
+  margin-left: 0.5rem;
+  font-size: var(--fz-l);
+}
+
+.btn:hover svg {
+  transform: scale(1.1);
+  transform-origin: center;
+  -webkit-animation: heartbeat 1.5s infinite both;
+  animation: heartbeat 1.5s infinite both;
+}
+
+.links .btn:first-child {
+  margin-right: 1rem;
+}
+
+.links .btn:last-child {
+  background: transparent;
+  color: black;
+  font-weight: 400;
+}
+
+.links .btn:last-child:hover {
+  background: var(--logo-color-100);
+}
+
+
+
+.tags {
+  align-items: right;
+  flex-wrap: nowrap;
+  margin-bottom: 3rem;
+  align-self:right;
+  margin-top:0.5rem;
+  height:9rem;
+  display:flex;
+  margin-right:10rem;
+
+}
+
+@media (max-width: 876px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .container {
+    padding: 0 22px;
+  }
+
+  .card {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .tags{
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+    display:grid;
+  }
+
+  .products{
+    margin-top:15rem;
+  }
+
+
+}
+
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1.0);
+  } 
+  20% {
+    -webkit-transform: scale(1.0);
+  }
+  50% {
+    -webkit-transform: scale(.90);
+  }
+  100% {
+    -webkit-transform: scale(1.0);
+}
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+  20% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+  50% {
+    -webkit-transform: scale(.90);
+    transform: scale(.90);
+  }
+  100% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
+
+
+.logo{
+  background-image: url("https://docs.medusajs.com/img/logo-dark.svg");
+  height: 9rem;
+  background-size: 10rem 4rem;
+  align-self:left;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  padding:10rem;
+  margin-right: 4rem;
+ 
+}
+
