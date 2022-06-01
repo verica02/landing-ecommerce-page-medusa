@@ -2,7 +2,9 @@
 
 Medusa Homepage design with Next.js and CSS grid
 
-![image](https://user-images.githubusercontent.com/77109037/171418786-2661a9ca-8053-4895-9de6-eedc5b1e51ab.png)
+![image](https://user-images.githubusercontent.com/77109037/171474704-d29ca355-810a-4f12-9818-8b316084d217.png)
+
+
 
 
 How to use:
