@@ -1,4 +1,4 @@
-# landing-ecommerce-page-medusa
+# landing-page
 
 Medusa Homepage design with Next.js and CSS grid
 
